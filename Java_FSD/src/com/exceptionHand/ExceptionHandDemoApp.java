@@ -14,10 +14,26 @@ public class ExceptionHandDemoApp {
 		try {
 		int c=a/b;
 		System.out.println(c);
-		}catch(Exception e) {
-			e.printStackTrace();
-			System.out.println("Exception handle");
-			
+		
+		System.out.println("Enter size of array");
+		int size=sc.nextInt();
+		int arr[]=new int[size];
+		System.out.println("please enter index no. arr");
+		int n=sc.nextInt();
+		arr[n]=999;
+		
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Divide by zero not allowed");
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("please define the index no. within  a range ");
+		}
+		catch(NegativeArraySizeException e) {
+			System.out.println("please enter positive no.");
+		}
+		catch(Exception e) {
+			System.out.println("Divide by zero not allowed");
 		}
 		System.out.println("Connection terminated");
 		sc.close();

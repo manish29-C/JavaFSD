@@ -18,8 +18,6 @@ public class KodCalciApp {
     	  char operator=sc.next().charAt(0);
     	  disp(new AyushInfoTech(a,b),operator);
     	  
-    	  
-    	  
 	}
       
       static void disp2(KodCalci c) {
