@@ -16,12 +16,21 @@ public class ATM1 {
 		user_pass=sc.nextInt();
 	}
 	
-	void verify() {
+	void verify() throws InvalidInputException{
 		 if((accNo==user_acc) && (password==user_pass)){
-			 System.out.println("Login successful");
+			 System.out.println("Collect your cash");
 		 }else {
-			 System.out.println("Login failed");
+			 InvalidInputException e=new InvalidInputException();
+			 System.out.println(e.getMessage());
+			 throw e;
 		 }
 	}
 
+}
+
+class InvalidInputException extends Exception{
+	public String getMessage() {
+		return "Wrong Credentials";
+		
+	}
 }
