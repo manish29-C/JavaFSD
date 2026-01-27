@@ -1,4 +1,4 @@
-package com.multithreding;
+package com.multithreading;
 
 public class KodEditor {
 	public static void main(String[] args) {
