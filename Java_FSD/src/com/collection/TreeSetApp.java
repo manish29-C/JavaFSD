@@ -5,6 +5,7 @@ import java.util.TreeSet;
 public class TreeSetApp {
 	public static void main(String[] args) {
 		TreeSet ts=new TreeSet();
+		TreeSet ts1=new TreeSet();
 		ts.add(100);
 		ts.add(50);
 		ts.add(150);
@@ -20,7 +21,15 @@ public class TreeSetApp {
 		System.out.println(ts.floor(25));
 		System.out.println(ts.lower(75));
 		System.out.println(ts.higher(75));
+		System.out.println("------------------");
 		
+		System.out.println("print the lower most node");
+		System.out.println(ts.headSet(75));
+		System.out.println("print the upermost value");
+		System.out.println(ts.tailSet(50));
+		System.out.println(ts.hashCode());
+		System.out.println(ts1.hashCode());
+
 	}
 
 }
