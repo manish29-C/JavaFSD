@@ -13,6 +13,8 @@ public class TreeSetApp {
 		ts.add(75);
 		ts.add(125);
 		ts.add(175);
+		ts.add(175);
+		ts.add(null);
 		System.out.println(ts);
 		
 		System.out.println("-----------------");

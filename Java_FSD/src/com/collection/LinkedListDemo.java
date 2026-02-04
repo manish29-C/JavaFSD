@@ -5,15 +5,17 @@ import java.util.LinkedList;
 
 public class LinkedListDemo {
 	public static void main(String[] args) {
-//		LinkedList ll=new LinkedList();
-//		ll.add(100);
-//		ll.add(25);
-//		ll.add(99);
-//		ll.addLast(75);
-//		ll.addFirst(50);
-//		ll.add(150);
-//		System.out.println(ll);
-//		System.out.println(ll.get(3));
+		LinkedList ll=new LinkedList();
+		ll.add(100);
+		ll.add(25);
+		ll.add(99);
+		ll.addLast(75);
+		ll.addFirst(50);
+		ll.add(150);
+		ll.add(150);
+		ll.add(null);
+		System.out.println(ll);
+		System.out.println(ll.get(3));
 //		
 //		LinkedList lll=new LinkedList();
 //		lll.push(10);
@@ -45,6 +47,7 @@ public class LinkedListDemo {
 		long t4=System.currentTimeMillis();
 		System.out.println(t2-t1);
 		System.out.println(t4-t3);
+		
 		
 		
 	}

@@ -13,6 +13,7 @@ public class PriorityApp {
 		pq.add(75);
 		pq.add(125);
 		pq.add(175);
+		pq.add(175);
 		System.out.println(pq);
 	}
 
